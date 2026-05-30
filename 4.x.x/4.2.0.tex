@@ -1044,67 +1044,10 @@ Chi tiết yêu cầu chức năng nghiệp vụ của từng nhóm người dù
     \hline
 \end{longtable}
 
-% ============================================================
-\vspace{0.3cm}
-\textbf{2. Bảng Quy định / Công thức liên quan --- Quản trị viên}
-
-\begin{longtable}{|
-        c|
-        >{\raggedright\arraybackslash}p{2.4cm}|
-        >{\raggedright\arraybackslash}p{3.4cm}|
-        >{\raggedright\arraybackslash}p{6.0cm}|
-        >{\raggedright\arraybackslash}p{1.4cm}|}
-
-    \hline
-    \rowcolor{headerblue}
-    \textbf{STT} & \textbf{Mã số} & \textbf{Tên Quy định} & \textbf{Mô tả chi tiết} & \textbf{Ghi chú} \\
-    \hline
-    \endfirsthead
-    \multicolumn{5}{c}{{\tablename\ -- Tiếp theo trang trước}} \\
-    \hline
-    \rowcolor{headerblue}
-    \textbf{STT} & \textbf{Mã số} & \textbf{Tên Quy định} & \textbf{Mô tả chi tiết} & \textbf{Ghi chú} \\
-    \hline
-    \endhead
-    \hline \multicolumn{5}{|r|}{{Tiếp tục ở trang sau...}} \\ \hline
-    \endfoot
-    \hline
-    \endlastfoot
-    1  & QĐ-AD-01.1 & Đăng nhập hệ thống quản trị  & Kiểm tra cặp tên đăng nhập + mật khẩu. Khóa tài khoản sau 5 lần sai trong 30 phút. &  \\
-    \hline
-    2  & QĐ-AD-01.2 & Đổi mật khẩu quản trị        & Xác thực mật khẩu hiện tại, nhập mật khẩu mới đáp ứng độ mạnh và xác nhận lại. &  \\
-    \hline
-    3  & QĐ-AD-02.1 & Xem danh sách bệnh lúa       & Hiển thị toàn bộ danh sách bệnh lúa kể cả bệnh đang ẩn. Hỗ trợ lọc và tìm kiếm theo tên bệnh. &  \\
-    \hline
-    4  & QĐ-AD-02.2 & Thêm bệnh lúa                & Upload ảnh lên Cloudinary trước, sau đó điền thông tin bệnh. Ràng buộc tên duy nhất, severity, imageUrl, treatment. Chỉ ADMIN được thực hiện. &  \\
-    \hline
-    5  & QĐ-AD-02.3 & Sửa bệnh lúa                 & Upload ảnh mới nếu cần, chỉnh sửa toàn bộ thông tin bệnh. Không được thay đổi mã định danh hệ thống. Chỉ ADMIN được thực hiện. &  \\
-    \hline
-    6  & QĐ-AD-02.4 & Ẩn / Xóa bệnh lúa            & Xóa vĩnh viễn nếu chưa có lịch sử chẩn đoán. Chuyển sang trạng thái ``Ẩn'' nếu đã có lịch sử. Chỉ ADMIN được thực hiện. &  \\
-    \hline
-    7  & QĐ-AD-03.1 & Xem danh sách tri thức       & Hiển thị danh sách các phân mảnh tri thức (chunk) trong kho, bao gồm nội dung, nguồn và siêu dữ liệu. &  \\
-    \hline
-    8  & QĐ-AD-03.2 & Nạp tài liệu dinh dưỡng mới  & Quy trình 4 bước: đọc file, lọc rác, băm nhỏ ngữ nghĩa, vector hóa 3072 chiều và lưu trữ. Chỉ ADMIN được thực hiện. &  \\
-    \hline
-    9  & QĐ-AD-03.3 & Xóa phân mảnh tri thức       & Xóa từng chunk theo UUID, giải phóng không gian lưu trữ vector. Chỉ ADMIN được thực hiện. &  \\
-    \hline
-    10 & QĐ-AD-04.1 & Xem danh sách người dùng     & Hiển thị danh sách kèm chỉ số thống kê động: tên đăng nhập, email, số lượt chẩn đoán, phản hồi, vai trò và trạng thái. &  \\
-    \hline
-    11 & QĐ-AD-04.2 & Khóa / Mở khóa tài khoản     & Thực hiện Ban/Unban kèm lý do và thời gian phạt. Không được chỉnh sửa thông tin cá nhân của người dùng. &  \\
-    \hline
-    12 & QĐ-AD-05.1 & Xem danh sách phản hồi       & Hiển thị danh sách phiếu phản hồi chưa xử lý, ưu tiên phiếu gửi sớm nhất. &  \\
-    \hline
-    13 & QĐ-AD-05.2 & Xử lý phản hồi               & Xem xét song song ảnh gốc, kết quả AI và báo cáo nông dân. Nhập lời nhắn và chốt trạng thái Chấp nhận/Từ chối. &  \\
-    \hline
-    14 & QĐ-AD-06.1 & Cập nhật mô hình AI          & Quy trình MLOps 5 bước: tải lên R2, caching cục bộ, bảo vệ RAM, khóa race condition và hot-reload không gián đoạn. &  \\
-    \hline
-    15 & QĐ-AD-06.2 & Cấu hình hệ thống \& Báo cáo & Thay đổi tham số hệ thống động đồng bộ Redis. Xem bản đồ nhiệt dịch bệnh và báo cáo hiệu suất mô hình AI. &  \\
-    \hline
-\end{longtable}
 
 % ============================================================
 \vspace{0.3cm}
-\textbf{3. Chi tiết từng Quy định --- Quản trị viên}
+\textbf{2. Chi tiết từng Quy định --- Quản trị viên}
 
 % ---- QĐ-AD-01 ----
 \vspace{0.3cm}
